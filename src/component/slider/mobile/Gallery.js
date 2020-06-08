@@ -80,7 +80,7 @@ export class MobileGallery extends Component {
 					>
 						{/* {Data && Data.map((item, i) => ( */}
 						{this.state.localStore.length && this.state.localStore.map((item, i) => (
-							<div>
+							<div key={i}>
 								<Background className="img-fluid" source={`${BaseUrl}/storage/${item.gambar.replace(/\\/g, "/")}`} />
 							</div>
 						))}

@@ -8,7 +8,7 @@ class TabThreeSixty extends Component {
     render(){
         return(
             <div style={{marginTop:75}}>
-                <iframe width="100%" height="480px" src={this.props.frame.embed_links} frameborder="0"></iframe>
+                <iframe width="100%" height="480px" src={this.props.frame.embed_links} frameBorder="0"></iframe>
             </div>
         )
     }

@@ -49,7 +49,7 @@ class Maps extends Component {
     
     if (this.state.isLoading) {
       return (
-        <div ref={this.props.lokasiRef} id={this.props.id} class="container-2 px-0" style={{ marginTop: 157, paddingBottom: 180 }}>
+        <div ref={this.props.lokasiRef} id={this.props.id} className="container-2 px-0" style={{ marginTop: 157, paddingBottom: 180 }}>
           <h5>Lokasi</h5>
           <h1 style={{ width: "415px" }}>Kenyamanan Dan Kemudahan Menantimu Di 'Planet' Bekasi.</h1>
 

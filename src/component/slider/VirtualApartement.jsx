@@ -107,6 +107,14 @@ export default VirtualApartement
 VirtualApartement.defaultProps = {
     data:[
             {
+                name:"Studio A & B",
+                link:"https://my.matterport.com/show/?m=QkKWVhwxX8V&brand=0"
+            },
+            {
+                name:"Studio 2 Bedroom",
+                link:"https://my.matterport.com/show/?m=8Hq58emEwf6"
+            },
+            {
                 name:"Lobby R 02",
                 // link:"https://poly.google.com/view/3I5SHJ3nUJ0/embed?chrome=min",
                 link:"https://ixm9s6vov2be0r7wfzh3cw-on.drv.tw/Lobby/index.htm"
@@ -115,13 +123,5 @@ VirtualApartement.defaultProps = {
                 name:"Pool",
                 link:"https://poly.google.com/view/eqDVNcBA-tr/embed?chrome=min"
             },
-            {
-                name:"Studio A & B",
-                link:"https://my.matterport.com/show/?m=QkKWVhwxX8V&brand=0"
-            },
-            {
-                name:"Studio 2 Bedroom",
-                link:"https://my.matterport.com/show/?m=8Hq58emEwf6"
-            }
         ]
 }

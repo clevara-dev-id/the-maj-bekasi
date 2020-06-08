@@ -65,7 +65,7 @@ export class MobileReviewUnit extends Component {
                 </div>
             ))}
             <div>
-              <iframe width="100%" height="240px" src={this.props.frame.embed_links} frameborder="0"></iframe>
+              <iframe width="100%" height="240px" src={this.props.frame.embed_links} frameBorder="0"></iframe>
             </div>
         </Slider>
 

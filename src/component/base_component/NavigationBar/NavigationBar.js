@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Navbar, Nav, Button } from 'react-bootstrap'
+import { Navbar, Nav, Button, NavDropdown } from 'react-bootstrap'
 import logo from '../../../assets/logo.svg'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -47,12 +47,25 @@ export class NavigationBar extends Component {
 
 							{this.props.store.map((item,i) => {
 								return (
-										<a key={i} href={item.link} className="nav-link">
-											<H5 color={this.state.isTop ? "#fff" : "#232323"}>{item.name}</H5>
-										</a>
+										<li className="nav-item">
+											<a key={i} href={item.link} className="nav-link">
+												<H5 color={this.state.isTop ? "#fff" : "#232323"}>{item.name}</H5>
+											</a>
+										</li>
 									)
 							}
 							)}
+
+							<MyNavDropdown color={this.state.isTop ? "#fff" : "#232323"} title="Tentang" id="basic-nav-dropdown">
+								<NavDropdown.Item href="/tentang-kami">Visi</NavDropdown.Item>
+								<NavDropdown.Item href="/expertise">Expertise</NavDropdown.Item>
+							</MyNavDropdown>
+
+							<li className="nav-item">
+								<a href="#virtual-tour" className="nav-link">
+									<H5 color={this.state.isTop ? "#fff" : "#232323"}>Tur Virtual</H5>
+								</a>
+							</li>
 
 						</Nav>
 						<Nav style={{margin: "-5px 0 0 0", padding: "0"}}>
@@ -159,6 +172,19 @@ font-weight: normal;
 font-size: 11px;
 margin-bottom: 0px;
 color: ${props => props.color}
+`;
+
+const MyNavDropdown = styled(NavDropdown)`
+	& > a {
+		font-family: Gilroy Bold !important;
+		font-weight: normal !important;
+		font-size: 11px !important;
+		margin-bottom: 0px !important;
+		color: ${props => props.color} !important;
+		text-transform: uppercase;
+		line-height: 28px;
+  		letter-spacing: 2px;
+	}
 `;
 
 const SideNav = styled.div`

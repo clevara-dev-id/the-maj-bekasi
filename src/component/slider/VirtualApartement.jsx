@@ -59,16 +59,16 @@ class VirtualApartement extends Component {
                             if(i === this.state.indexActive){
                                 return (
                                     <Row className="justify-content-center">
-                                        <Col sm={1} className="text-center on-mobile-hide">
+                                        <Col className="text-center">
                                             <Buttons onClick={this.previous}><i className="fa fa-chevron-left"></i></Buttons>
                                         </Col>
-                                        <Col sm={4} className="text-center">
+                                        <Col className="text-center">
                                             <p style={{ fontSize: "14px", lineHeight: "16px", textTransform: "uppercase", color: "#000000", marginBottom: "30px", fontWeight: "bold" }}>
                                                 {item.name}
                                             </p>
                                             <p style={{ fontSize: "14px", lineHeight: "16px", color: "#000000" }}> {i + 1} | {this.props.data.length} </p>
                                         </Col>
-                                        <Col sm={1} className="text-center on-mobile-hide">
+                                        <Col className="text-center">
                                             <Buttons onClick={this.next}><i className="fa fa-chevron-right"></i></Buttons>
                                         </Col>
                                     </Row>
@@ -116,12 +116,16 @@ VirtualApartement.defaultProps = {
             },
             {
                 name:"Lobby R 02",
-                // link:"https://poly.google.com/view/3I5SHJ3nUJ0/embed?chrome=min",
-                link:"https://ixm9s6vov2be0r7wfzh3cw-on.drv.tw/Lobby/index.htm"
+                link:"https://poly.google.com/view/3I5SHJ3nUJ0/embed?chrome=min",
+                // link:"https://ixm9s6vov2be0r7wfzh3cw-on.drv.tw/Lobby/index.htm"
             },
             {
                 name:"Pool",
                 link:"https://poly.google.com/view/eqDVNcBA-tr/embed?chrome=min"
+            },
+            {
+                name:"Sky Garden",
+                link:"https://poly.google.com/view/5vqSNgUTff5/embed?chrome=min"
             },
         ]
 }

@@ -56,16 +56,17 @@ export class NavigationBar extends Component {
 							}
 							)}
 
-							<MyNavDropdown color={this.state.isTop ? "#fff" : "#232323"} title="Tentang" id="basic-nav-dropdown">
-								<NavDropdown.Item href="/tentang-kami">Visi</NavDropdown.Item>
-								<NavDropdown.Item href="/expertise">Expertise</NavDropdown.Item>
-							</MyNavDropdown>
-
 							<li className="nav-item">
 								<a href="#virtual-tour" className="nav-link">
 									<H5 color={this.state.isTop ? "#fff" : "#232323"}>Tur Virtual</H5>
 								</a>
 							</li>
+
+							<MyNavDropdown color={this.state.isTop ? "#fff" : "#232323"} title="Visi" id="basic-nav-dropdown">
+								<NavDropdown.Item href="/tentang-kami">Visi</NavDropdown.Item>
+								<NavDropdown.Item href="/expertise">Expertise</NavDropdown.Item>
+							</MyNavDropdown>
+
 
 						</Nav>
 						<Nav style={{margin: "-5px 0 0 0", padding: "0"}}>

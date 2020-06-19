@@ -102,7 +102,6 @@ class DenahUnit extends Component {
 				</div>
 			)
 		}
-		console.log(this.state.localStore)
 		return (
 			<>
 				<div style={{ paddingTop: 150 }} id={this.props.id} ref={this.props.denahUnitRef}>

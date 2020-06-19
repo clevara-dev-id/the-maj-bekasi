@@ -67,13 +67,13 @@ export default class Base extends Component {
   }
 
   componentDidMount() {
-    const promiseNavbar = Promise.resolve(
-      getNavbar()
-      .then(res => this.setState({ navigation: res.data }))
-      .catch((err) => {
-        if (err && err.response) this.setState({ errors: { navigation: { code: err.response.status, status: err.response.statusText } } })
-      })
-    )
+    // const promiseNavbar = Promise.resolve(
+    //   getNavbar()
+    //   .then(res => this.setState({ navigation: res.data }))
+    //   .catch((err) => {
+    //     if (err && err.response) this.setState({ errors: { navigation: { code: err.response.status, status: err.response.statusText } } })
+    //   })
+    // )
 
     // const promiseSlider = Promise.resolve(
     //   getSliders()
@@ -99,13 +99,13 @@ export default class Base extends Component {
     //   })
     // )
 
-    // const promisePartner = Promise.resolve(
-    //   getPartnership()
-    //   .then(res => this.setState({ partnership: res.data }))
-    //   .catch((err) => {
-    //     if (err && err.response) this.setState({ errors: { partnership: { code: err.response.status, status: err.response.statusText } } })
-    //   })
-    // )
+    const promisePartner = Promise.resolve(
+      getPartnership()
+      .then(res => this.setState({ partnership: res.data }))
+      .catch((err) => {
+        if (err && err.response) this.setState({ errors: { partnership: { code: err.response.status, status: err.response.statusText } } })
+      })
+    )
 
     // const promiseLocation = Promise.resolve(
     //   getLocation()
@@ -147,13 +147,13 @@ export default class Base extends Component {
       })
     )
 
-    const promiseSocialMedia = Promise.resolve(
-      getSocialMedia()
-      .then(res => this.setState({ socialMedia: res.data }))
-      .catch((err) => {
-        if (err && err.response) this.setState({ errors: { socialMedia: { code: err.response.status, status: err.response.statusText } } })
-      })
-    )
+    // const promiseSocialMedia = Promise.resolve(
+    //   getSocialMedia()
+    //   .then(res => this.setState({ socialMedia: res.data }))
+    //   .catch((err) => {
+    //     if (err && err.response) this.setState({ errors: { socialMedia: { code: err.response.status, status: err.response.statusText } } })
+    //   })
+    // )
     
     // Promise.all([promiseNavbar, promiseSlider, promiseUnit, promiseGaleri, promisePartner, promiseLocation, promiseAbout, promiseBlog, promiseExpert, promisePrivacyPolicy, promiseSocialMedia])
     //   .then(() => {

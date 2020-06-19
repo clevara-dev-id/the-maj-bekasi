@@ -3,7 +3,6 @@ import { getNavbar, getSliders, getUnits, getGallery, getPartnership, getLocatio
 import {storeContact, storeSubscribe} from '../services/post'
 
 import { OnDesktop, OnMobileAndTablet } from '../constants'
-// import LoaderSpinnerData from '../component/base/loader/LoaderSpinnerData'
 
 // COMPONENT
 const DenahUnit = lazy(() => import('../component/tab/DenahUnit'))

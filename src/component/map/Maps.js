@@ -130,9 +130,10 @@ const setIcon = (icon) => {
 const Gmaps = (props) => {
   return (
     <GoogleMapReact
-      bootstrapURLKeys={{ key: "" }}
+      bootstrapURLKeys={{ key: "AIzaSyAGbxpkHCHp3iNiwRWSTb_PmKo5H1qd62c" }}
       defaultCenter={props.center}
       defaultZoom={props.zoom}
+      
     >
       {props.location.map(function (item) {
         return (

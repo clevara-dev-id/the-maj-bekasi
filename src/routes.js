@@ -1,14 +1,14 @@
-import React from 'react'
-import { Route, Redirect, Switch } from 'react-router-dom'
+import React, { lazy } from 'react'
+import { Route, Switch } from 'react-router-dom'
 
-import Home from './view/Home'
-import TentangKami from './view/TentangKami'
-import Partnership from './view/Partnership'
-import Expertice from './view/Expertice'
-import BlogList from './view/Blog'
-import PrivacyPolicy from './view/PrivacyPolicy'
-import Page404 from './view/errors/Page404'
-import BlogDetail from './view/BlogDetail'
+const Home = lazy(() => import('./view/Home'))
+const Partnership = lazy(() => import('./view/Partnership'))
+const TentangKami = lazy(() => import('./view/TentangKami'))
+const Expertice = lazy(() => import('./view/Expertice'))
+const BlogList = lazy(() => import('./view/Blog'))
+const PrivacyPolicy = lazy(() => import('./view/PrivacyPolicy'))
+const Page404 = lazy(() => import('./view/errors/Page404'))
+const BlogDetail = lazy(() => import('./view/BlogDetail'))
 
 const BaseRoute = () => {
     return (

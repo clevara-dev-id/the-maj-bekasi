@@ -4,14 +4,12 @@ import { NavigationBar, MobileNavigationBar, Footer, MobileFooter } from '../com
 import { OnDesktop, OnMobileAndTablet } from '../constants/'
 import Base from './Base'
 import Whatsapp from '../component/base/whatsapp'
-import LoaderSpinnerData from '../component/base/loader/LoaderSpinnerData'
 
 export default class ApplicationLayout extends Base {
     render() {
         return (
             <div>
                 <Whatsapp />
-                {/* <LoaderSpinnerData show={this.state.sentLoading} /> */}
                 <header>
                     <OnDesktop>
                         <NavigationBar store={this.state.navigation} isTop={this.state.isTop}/>

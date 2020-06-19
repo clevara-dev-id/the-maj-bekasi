@@ -277,11 +277,11 @@ class Home extends Component {
 						<Blogs store={this.state.blogs} />
 					</section>
 
-					<section>
+					{/* <section>
 						<div className="w-100">
 							<VirtualApartement />
 						</div>
-					</section>
+					</section> */}
 
 					<section>
 						<div className="container">
@@ -338,11 +338,11 @@ class Home extends Component {
 						<MobileBlogs store={this.state.blogs} />
 					</section>
 
-					<section>
+					{/* <section>
 						<div className="w-100">
 							<VirtualApartement />
 						</div>
-					</section>
+					</section> */}
 
 					<section>
 						<MobileContactUs

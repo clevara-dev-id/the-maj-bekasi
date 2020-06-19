@@ -1,15 +1,1 @@
-.vision, .vision>div, .vision > div > p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 21px;
-    color: #000000;
-}
-.vision > div > b {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #000000;
-}
+.vision,.vision>div,.vision>div>p{font-style:normal;font-weight:400;font-size:16px;line-height:21px;color:#000}.vision>div>b{font-weight:700;font-size:12px;line-height:16px;letter-spacing:3px;text-transform:uppercase;color:#000}

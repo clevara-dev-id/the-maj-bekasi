@@ -1,12 +1,1 @@
-#contactUs > div > div > .form-control{
-    background: #F9F9F9;
-    border: 0.5px solid #C8C8C8;
-    box-sizing: border-box;
-    border-radius: 2px;
-  }
-  #contactUs > div > .form-control{
-    background: #F9F9F9;
-    border: 0.5px solid #C8C8C8;
-    box-sizing: border-box;
-    border-radius: 2px;
-  }
+#contactUs>div>div>.form-control{background:#f9f9f9;border:.5px solid #c8c8c8;box-sizing:border-box;border-radius:2px}#contactUs>div>.form-control{background:#f9f9f9;border:.5px solid #c8c8c8;box-sizing:border-box;border-radius:2px}

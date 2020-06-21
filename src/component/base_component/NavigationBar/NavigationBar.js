@@ -157,6 +157,16 @@ export class MobileNavigationBar extends Component {
 						>
 							<a href="#virtual-tour" ><h3>Tur Virtual</h3></a>
 						</SideNavLink>
+						<SideNavLink
+							onClick={() => this.setState({ showing: !showing })}
+						>
+							<a href="/tentang-kami"><h3>Visi</h3></a>
+						</SideNavLink>
+						<SideNavLink
+							onClick={() => this.setState({ showing: !showing })}
+						>
+							<a href="/expertise"><h3>Expertise</h3></a>
+						</SideNavLink>
 					</SideNav>
 				</div>
 			</Navbar>

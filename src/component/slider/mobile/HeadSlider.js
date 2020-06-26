@@ -61,10 +61,7 @@ export class HeadSlider extends Component {
 				>
 					{this.state.localStore && this.state.localStore.map((item, i) => {
 						return (
-							<>
-								{/* <Background source= /> */}
-								<img className="w-100" src={`${BaseUrl}/storage/${item.image.replace(/\\/g, "/")}`} alt="1"/>
-							</>
+							<img className="w-100" src={`${BaseUrl}/storage/${item.image.replace(/\\/g, "/")}`} alt="1" key={i}/>
 						)
 					})}
 				</Slider>

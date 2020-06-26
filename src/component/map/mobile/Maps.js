@@ -87,9 +87,9 @@ export default class Maps extends Component {
 				<Slider ref={c => (this.slider = c)} {...settings}>
 					{this.state.localStore.map((item, i) => {
 						return (
-							<div>
+							<div key={i}>
 
-								<div key={i} style={{ height: 200 }}>
+								<div style={{ height: 200 }}>
 									<GoogleMapReact
 										bootstrapURLKeys={{ key: "AIzaSyAGbxpkHCHp3iNiwRWSTb_PmKo5H1qd62c" }}
 										defaultCenter={this.state.center}
@@ -115,7 +115,7 @@ export default class Maps extends Component {
 									<div style={{ marginBottom: "13px" }}>
 										{item.marker.slice(0, 5).map((est, e) => {
 											return (
-												<Col className="d-flex my-3 p-0 pl-3" key={{e}} >
+												<Col className="d-flex my-3 p-0 pl-3" key={e} >
 													<img style={{ width: "15px", height: "15px", margin: "auto 10px auto 0px" }} src={setIcon(est.icon)} alt="location icon" />
 													<Caps2 style={{ padding: "5px 0px", margin: 0 }}>
 														<b className="text-uppercase" style={{ color: "#cc9980" }}>± {est.estimasi} </b> Ke {est.name}

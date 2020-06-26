@@ -22,7 +22,7 @@ export default class MobileContactForm extends Component {
             // 
             <Form id="contactUs" onSubmit={this.props.onSubmit} validated={this.props.validated}>
                 <Form.Row>
-                    <Form.Group className="selectField" as={Col} xs="4" controlId="gelarField">
+                    <Form.Group className="selectField" as={Col} xs="4" id="gelarField">
                         <Form.Control 
                             size="lg"
                             as="select"
@@ -35,7 +35,7 @@ export default class MobileContactForm extends Component {
                         ))}
                         </Form.Control>
                     </Form.Group>
-                    <Form.Group as={Col} xs="8" controlId="namaField">
+                    <Form.Group as={Col} xs="8" id="namaField">
                         <Form.Control
                             size="lg"
                             ref={this.props.namaRef}
@@ -52,7 +52,7 @@ export default class MobileContactForm extends Component {
                         </Form.Control.Feedback> */}
                     </Form.Group>
                 </Form.Row>
-                <Form.Group className="position-relative selectField" controlId="unitField">
+                <Form.Group className="position-relative selectField" id="unitField">
                     <Form.Control
                         as="select" 
                         ref={this.props.unitRef} 
@@ -70,7 +70,7 @@ export default class MobileContactForm extends Component {
                         Harap Pilih Salah Satu
                     </Form.Control.Feedback> */}
                 </Form.Group>
-                    <Form.Group controlId="teleponField">
+                    <Form.Group id="teleponField">
                         <Form.Control 
                             size="lg"
                             ref={this.props.teleponRef}
@@ -87,7 +87,7 @@ export default class MobileContactForm extends Component {
                             Harap Masukkan Nomor Telpon. <br/> Format: (0-9)
                         </Form.Control.Feedback> */}
                     </Form.Group>
-                    <Form.Group controlId="emailField">
+                    <Form.Group id="emailField">
                         <Form.Control 
                             size="lg"
                             ref={this.props.emailRef}
@@ -103,7 +103,7 @@ export default class MobileContactForm extends Component {
                         </Form.Control.Feedback> */}
                     </Form.Group>
                 <Form.Row>
-                    <Form.Group as={Col} sm="12" controlId="catatanField">
+                    <Form.Group as={Col} sm="12" id="catatanField">
                         <Form.Control
                             size="lg"
                             ref={this.props.catatanRef}

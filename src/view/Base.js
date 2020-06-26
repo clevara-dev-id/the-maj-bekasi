@@ -1,6 +1,5 @@
 import { Component, createRef } from 'react'
-import $ from 'jquery'
-import { getNavbar, getSliders, getUnits, getGallery, getPartnership, getLocation, getAbouts, getBlogs, getExpertice, getPrivacyPolicy, getSocialMedia } from '../services/get'
+import { getPartnership, getAbouts, getBlogs, getExpertice, getPrivacyPolicy } from '../services/get'
 import {storeContact, storeSubscribe} from '../services/post'
 
 export default class Base extends Component {

@@ -1,4 +1,4 @@
-import React, { useRef, Component } from 'react'
+import React, { Component } from 'react'
 import { Row, Col } from 'react-bootstrap'
 import styled from "styled-components";
 import Img1 from '../../assets/fasilitas/zenGarden.svg'

@@ -64,9 +64,6 @@ export class MobileReviewUnit extends Component {
                     <img className="img-fluid" src={`${BaseUrl}/storage/${d.gambar}`} alt="review 1" />
                 </div>
             ))}
-            <div>
-              <iframe width="100%" height="240px" src={this.props.frame.embed_links} frameBorder="0"></iframe>
-            </div>
         </Slider>
 
         <div id="reviewUnitMobile" style={{width: "100%", marginTop: "21px"}}>
@@ -93,9 +90,6 @@ export class MobileReviewUnit extends Component {
                     </div>
                   )
                 })}
-                <div>
-                  <img src={exampleImg} alt="preview" className="mx-auto p-3" style={{width: '100%'}} />
-                </div>
             </Slider>
         </div>
       </>

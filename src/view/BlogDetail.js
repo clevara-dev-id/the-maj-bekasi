@@ -1,4 +1,4 @@
-import React, { createElement, useState, useEffect } from 'react'
+import React, { createElement, useState } from 'react'
 import { Col, Row, OverlayTrigger, Tooltip } from 'react-bootstrap'
 import styled from 'styled-components'
 
@@ -6,8 +6,8 @@ import styled from 'styled-components'
 import IconUser from '../component/assets/tmp-blog/user.svg'
 import IconCalender from '../component/assets/tmp-blog/calender.svg'
 
-import { OnDesktop, OnMobileAndTablet } from '../constants'
-import { useParams, useRouteMatch, useLocation, Link, useHistory, withRouter } from 'react-router-dom'
+import { OnDesktop } from '../constants'
+import { Link, useHistory, withRouter } from 'react-router-dom'
 import { BaseUrl } from '../services/axios'
 import ScrollToTopOnMount from '../services/ScrollToTopOnMount'
 import Base from './Base'
@@ -15,8 +15,8 @@ import LoaderSpinner from '../component/base/loader/LoaderSpinner'
 
 class BlogDetail extends Base {
     _shareClick = (e) => {
-        console.log(e)
-        console.log(window.location)
+        // console.log(e)
+        // console.log(window.location)
     }
     render() {
         if (this.state.blogs.length) {

@@ -1,4 +1,4 @@
-import React, { Component, createElement } from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { Row, Col } from 'react-bootstrap'
@@ -6,7 +6,6 @@ import Slider from 'react-slick'
 import { BaseUrl } from '../../../services/axios'
 import IconUser from '../../assets/tmp-blog/user.svg'
 import IconCalender from '../../assets/tmp-blog/calender.svg'
-import { SliderPlaceholder } from '../../base/loader/ImagePlaceholder'
 import GaleriGambarLoading from '../../assets/blogs/blog-placeholder.svg'
 
 export default class BlogSlider extends Component {

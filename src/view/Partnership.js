@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import SakuraLogo from '../component/assets/partnership-image/sakura.svg'
 import Sakura from '../component/card/Sakura'
 import Base from './Base'

@@ -53,7 +53,6 @@ export class Simulasi extends Base {
         }
     }
     handleChangeCredits = (event) => {
-        console.log(event.target.value)
         if (!event.target.value) {
             this.setState({ credit: 0 })
         } else if (event.target.value > 26 || event.target.value < 1) {
@@ -105,9 +104,7 @@ export class Simulasi extends Base {
                             <Form.Group className="position-relative selectField" controlId="unitField">
                                 <FormControl as="select" id="kredit" name="credit" onChange={this.handleChangeCredits.bind(this)} >
                                     {this.state.options.length && this.state.options.map((index, i) => (
-                                        <>
-                                            <option key={i} value={index}>{index} tahun</option>
-                                        </>
+                                        <option key={i} value={index}>{index} tahun</option>
                                     ))}
                                 </FormControl>
                             </Form.Group>

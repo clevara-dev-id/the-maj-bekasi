@@ -91,13 +91,13 @@ export class MobileGallery extends Component {
 					{this.state.localStore.length && this.state.localStore.map((item, i) => {
 						if (i === this.state.indexActive) {
 							return (
-								<>
+								<React.Fragment key={i}>
 									<P>
 										{item.nama}
 										{item.unit ? " - " + item.unit.unit_name : " "}
 									</P>
 									<p style={{ fontSize: "14px", lineHeight: "16px", color: "#FFFFFF", textAlign: "center", letterSpacing: "3px" }}> {i + 1} | {this.state.localStore.length} </p>
-								</>
+								</React.Fragment>
 							)
 						}
 					})}

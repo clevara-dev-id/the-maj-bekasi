@@ -128,11 +128,3 @@ const P = styled.p`
     line-height: 21px;
     color: #232323;
 `;
-const Background = styled.div`
-    width:100%;
-    height:331px;
-    background: url(${props => props.source});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-`;

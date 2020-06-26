@@ -10,10 +10,7 @@ import {TabSpesifikasi} from './TabSpesifikasi'
 import TabSimulasi from './TabSimulasi'
 
 import dots from './assets/dots.svg'
-import Spec1 from './assets/spec1-placeholder.svg'
-import Spec2 from './assets/spec2-placeholder.svg'
 import './assets/style.css'
-import { SliderPlaceholder } from '../base/loader/ImagePlaceholder'
 import Skeleton from '../base/skeleton'
 import TabThreeSixty from './TabThreeSixty'
 
@@ -141,7 +138,7 @@ class DenahUnit extends Component {
 											eventKey={Object.keys(this.state.localStore[i])[2]}
 											title="360 VIEW"
 										>
-											{/* <TabThreeSixty frame={item.embed_links} /> */}
+											<TabThreeSixty frame={item.embed_links} />
 										</Tab>
 										<Tab
 											eventKey={Object.keys(this.state.localStore[i])[3]}
@@ -161,12 +158,6 @@ class DenahUnit extends Component {
 	}
 }
 
-const p = {
-	color: '#FFFFFF',
-	fontStyle: 'normal',
-	fontWeight: 'normal',
-	fontSize: 16
-}
 const Li = styled.li`
     padding:0;
     margin-bottom:10px;

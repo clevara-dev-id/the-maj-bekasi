@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Form } from 'react-bootstrap'
 import Slider from "react-slick"
 import styled from 'styled-components'
@@ -141,10 +141,10 @@ export class DenahUnit extends Base {
                                 </div>
 
                                 <div title="PREVIEW" style={{ margin: "77px 0" }}>
-                                    <MobileReviewUnit storeReview={d.gallery} frame={d.embed_links} />
+                                    <MobileReviewUnit storeReview={d.gallery} />
                                 </div>
                                 <div title="360 VIEW">
-                                    {/* <TabThreeSixty frame={d.embed_links} /> */}
+                                    <TabThreeSixty frame={d.embed_links} />
                                 </div>
                                 <div title="SIMULASI" style={{ margin: "77px 0" }}>
                                     <MobileSimulasi namaUnit={d.unit_name} hargaUnit={d.unit_price} />

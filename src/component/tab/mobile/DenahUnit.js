@@ -144,7 +144,7 @@ export class DenahUnit extends Base {
                                     <MobileReviewUnit storeReview={d.gallery} frame={d.embed_links} />
                                 </div>
                                 <div title="360 VIEW">
-                                    <TabThreeSixty frame={d.embed_links} />
+                                    {/* <TabThreeSixty frame={d.embed_links} /> */}
                                 </div>
                                 <div title="SIMULASI" style={{ margin: "77px 0" }}>
                                     <MobileSimulasi namaUnit={d.unit_name} hargaUnit={d.unit_price} />

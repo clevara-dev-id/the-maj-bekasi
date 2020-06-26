@@ -48,15 +48,6 @@ export class HeadSlider extends Component {
 		return (
 			<div id="mobile-head-slider">
 				<div className="mb-3">
-					{/* {this.state.localStore && this.state.localStore.map((item, i) => {
-						if (i === this.state.indexActive) {
-							return (
-								<>
-									<h1 key={i}>{item.caption}</h1>
-								</>
-							)
-						}
-					})} */}
 					<h1>
 						Investasi Pasti Dengan Harga Yang Kompetitif
 					</h1>
@@ -71,7 +62,8 @@ export class HeadSlider extends Component {
 					{this.state.localStore && this.state.localStore.map((item, i) => {
 						return (
 							<>
-								<Background source={`${BaseUrl}/storage/${item.image.replace(/\\/g, "/")}`} />
+								{/* <Background source= /> */}
+								<img className="w-100" src={`${BaseUrl}/storage/${item.image.replace(/\\/g, "/")}`} alt="1"/>
 							</>
 						)
 					})}

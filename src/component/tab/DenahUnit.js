@@ -141,7 +141,7 @@ class DenahUnit extends Component {
 											eventKey={Object.keys(this.state.localStore[i])[2]}
 											title="360 VIEW"
 										>
-											<TabThreeSixty frame={item.embed_links} />
+											{/* <TabThreeSixty frame={item.embed_links} /> */}
 										</Tab>
 										<Tab
 											eventKey={Object.keys(this.state.localStore[i])[3]}

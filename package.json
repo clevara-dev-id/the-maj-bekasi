@@ -46,8 +46,7 @@
     "bootstrap": "^4.4.1",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-slick": "^0.25.2",
-    "styled-components": "^5.0.1",
-    "terser-brunch": "^4.0.0"
+    "styled-components": "^5.0.1"
   },
   "bit": {
     "env": {},

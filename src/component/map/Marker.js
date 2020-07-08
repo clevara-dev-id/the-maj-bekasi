@@ -9,7 +9,7 @@ export default class Marker extends Component {
   render() {
     return (
       <div className="text-center" style={{width:"30px", height:"30px", textAlign:"center", borderRadius:"50%", backgroundColor:"#fff"}}>
-        <img src={this.props.icon} alt={this.props.name} />
+        <img width="30" src={this.props.icon} alt={this.props.name} />
       </div>
     )
   }

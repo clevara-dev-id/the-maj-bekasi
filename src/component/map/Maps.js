@@ -9,6 +9,7 @@ import busway from './assets/busway.svg'
 import station from './assets/station.svg'
 import tolls from './assets/tolls.svg'
 import gor from './assets/gor.svg'
+import tmrb from './assets/mapsIcon.svg'
 
 import Marker from './Marker'
 import { Tabs, Tab, Row, Col } from 'react-bootstrap';
@@ -123,6 +124,8 @@ const setIcon = (icon) => {
       return tolls;
     case 'gor':
       return gor;
+    case 'tmrb':
+        return tmrb;
     default:
       return marketplace
   }
@@ -146,6 +149,12 @@ const Gmaps = (props) => {
           />
         );
       })}
+      <Marker 
+        lat="-6.239964"
+        lng="106.996388"
+        text="the maj bekasi"
+        icon={setIcon('tmrb')}
+      />
     </GoogleMapReact>
   );
 }

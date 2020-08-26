@@ -22,7 +22,7 @@ const MobileContactUs = lazy(() => import('../component/contact-us/MobileContact
 const MobileMaps = lazy(() => import('../component/map/mobile/Maps'))
 const HeadSlider = lazy(() => import('../component/slider/HeadSlider'))
 const Fasilitas =  lazy(() => import('../component/fasilitas/Fasilitas'))
-const VirtualApartement = lazy(() => import('../component/slider/VirtualApartement'))
+// const VirtualApartement = lazy(() => import('../component/slider/VirtualApartement'))
 
 class Home extends Component {
 	constructor(props){
@@ -275,11 +275,11 @@ class Home extends Component {
 						<Blogs store={this.state.blogs} />
 					</section>
 
-					<section>
+					{/* <section>
 						<div className="w-100">
 							<VirtualApartement />
 						</div>
-					</section>
+					</section> */}
 
 					<section>
 						<div className="container">
@@ -336,11 +336,11 @@ class Home extends Component {
 						<MobileBlogs store={this.state.blogs} />
 					</section>
 
-					<section>
+					{/* <section>
 						<div className="w-100">
 							<VirtualApartement />
 						</div>
-					</section>
+					</section> */}
 
 					<section>
 						<MobileContactUs

@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Tabs, Tab, Row, Col } from 'react-bootstrap'
-// import DropdownCicilan from './DropdownCicilan'
-// import DropdownKredit from './DropdownKredit'
-// import DropdownBunga from './DropdownBunga'
 
 import TabGallery from '../slider/TabGallery'
 import {TabSpesifikasi} from './TabSpesifikasi'
@@ -12,7 +9,7 @@ import TabSimulasi from './TabSimulasi'
 import dots from './assets/dots.svg'
 import './assets/style.css'
 import Skeleton from '../base/skeleton'
-import TabThreeSixty from './TabThreeSixty'
+// import TabThreeSixty from './TabThreeSixty'
 
 class DenahUnit extends Component {
 	constructor(props) {
@@ -134,12 +131,12 @@ class DenahUnit extends Component {
 											title="PREVIEW UNIT">
 											<TabGallery images={item.gallery} />
 										</Tab>
-										<Tab
+										{/* <Tab
 											eventKey={Object.keys(this.state.localStore[i])[2]}
 											title="360 VIEW"
 										>
 											<TabThreeSixty frame={item.embed_links} />
-										</Tab>
+										</Tab> */}
 										<Tab
 											eventKey={Object.keys(this.state.localStore[i])[3]}
 											title="SIMULASI KPA">

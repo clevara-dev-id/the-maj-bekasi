@@ -4,8 +4,6 @@ import { BaseUrl } from "../../services/axios";
 import { Col, Row } from "react-bootstrap";
 import styled from "styled-components";
 
-import exampleImg from '../assets/tentangkami-image/2.png'
-
 export default class TabGallery extends Component {
   constructor(props) {
     super(props);
